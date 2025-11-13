@@ -1,1 +1,115 @@
-，<h1>Lab1</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<form>
+		<table border = "1" style = "width:100">
+
+			<!-- first row : caption-->
+			<tr>
+				<th colspan = "3">About -- 110208061</th>
+			</tr>
+
+			<!-- second row : photo, name and gender-->
+			<tr>
+				<th rowspan = "3">
+					<img src = "me.jpg" alt = "it's my photo" width = "85px" height = "110px">
+					<br>personal photo</br>
+				</th>
+
+				<td colspan = "2">
+					<label>Name:
+						<input type = "text" name = "name">
+					</label>
+					</br>
+					<label>Gender:
+						<input type = "radio" name = "gender" value = "male"> Male
+						<input type = "radio" name = "gender" value = "female"> Female
+						<input type = "radio" name = "gender" value = "other"> Other
+					</label>
+				</td>
+			</tr>
+
+			<!-- third row : county and birthday-->
+			<tr>
+				<td>
+					<label>County: 
+						<select name = "county">
+							<option value = "taipei">Taipei</option>
+							<option value = "tainan">Tainan</option>
+							<option value = "taichung">Taichung</option>
+							<option value = "taoyuan">Taoyuan</option>
+						</select>
+					</label>
+				</td>
+
+				<td>
+					<label>Birthday:
+						<input type = "date" >
+					</label>
+				</td>
+			</tr>
+
+			<!-- fourth row : email-->
+			<tr>
+				<td colspan = "2">
+					<label>E-mail: 
+						<input type = "email" name = "email">
+					</label>
+				</td>
+			</tr>
+
+			<!-- fifth row : hobby-->
+			<tr>
+				<td>Hobby</td>
+
+				<td colspan = "2">
+					<input type = "checkbox" name = "hobby" value = "swimming"> Swimming
+					<input type = "checkbox" name = "hobby" value = "volleyball"> Volleyball
+					<input type = "checkbox" name = "hobby" value = "movie"> Movie
+					<input type = "checkbox" name = "hobby" value = "game"> Game
+					<input type = "checkbox" name = "hobby" value = sleep> Sleep
+				</td>
+			</tr>
+
+			<!-- sixth row : skill-->
+			<tr>
+				<td>Skill</td>
+
+				<td colspan = "2">
+					<input type = "checkbox" name = "skill" value = "java"> Java
+					<input type = "checkbox" name = "skill" value = "html"> HTML
+					<input type = "checkbox" name = "skill" value = "python"> Python
+					<input type = "checkbox" name = "skill" value = "microsoft office"> Microsoft Office
+					<input type = "checkbox" name = "skill" value = "premiere"> Premiere
+				</td>
+			</tr>
+
+			<!-- eighth row : say something-->
+			<tr>
+				<td>Say Something</td>
+
+				<td>
+					<textarea rows = "1" cols = "40" placeholder = "Say something here."></textarea>
+				</td>
+			</tr>
+
+			<!--ninth row : submit and reset-->
+			<tr>
+				<td colspan = "3">
+					<input type = "submit" value = "提交">
+					<input type = "reset" value = "重設">
+				</td>
+			</tr>
+
+
+		</table>
+	</form>
+
+</body>
+</html>
